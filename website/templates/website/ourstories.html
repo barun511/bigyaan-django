@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title> Bigyaan - Our Story </title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+</head>
+<body>
+    <script>
+        function initMap() {
+            var bounds = new google.maps.LatLngBounds();
+            var kolkata = {lat: 22.573, lng: 88.363};
+            var gurgaon = {lat: 28.423, lng: 77.084};
+            var dpsgurgaon = {lat: 28.442, lng: 77.064};
+            var map = new google.maps.Map(document.getElementById('map'));
+            var markers = [
+                {% for marker in markers %}
+                ['{{ marker.title }}', {{marker.latitude}}, {{marker.longitude}}],
+                {% endfor %}
+                ['Bigyaan Main Office', 28.423, 77.084]
+            ];
+            var i;
+            for(i=0;i<markers.length;i++)
+            {
+                var position = new google.maps.LatLng(markers[i][1],markers[i][2]);
+                bounds.extend(position);
+                marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    title: markers[i][0]
+                });
+                map.fitBounds(bounds);
+            }
+        /*    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+                this.setZoom(4);
+                google.maps.event.removeListener(boundsListener);
+            });*/
+        }
+    </script>
+    <div class="toolbar">
+        <img id="logo" src="{% static 'images/logo.png' %}" align="left">
+        <div class="right-side">
+            <a href="{% url 'index' %}">HOME</a>
+            <a href="{% url 'aboutus' %}">ABOUT US</a>
+            <a href="{% url 'ourstory' %}">OUR STORY</a>
+            <a href="{% url 'studentsworkshops' %}"> STUDENTS WORKSHOPS</a>
+            <a href="#"> LINK</a>
+            <a href="#"> LINK</a>
+        </div>
+    </div>
+    <div class="main-section">
+        <h3> Our Story </h3>
+        Bigyaan began in 2014 and has since come a long, long way. We now offer workshops for students and teachers in English, Activity Enriched Pedagogy, and Science - these workshops are directly conducted by our <a href="{% url 'aboutus' %}">resource persons</a>.
+    </div>
+    <div class="main-section">
+        <div class="left-section">
+            <h3> What People Say About Us </h3>
+            {% for testimonial in testimonials %}
+            <img class="circle" src="{{testimonial.image.url}}" align="left">
+            <p class="testimonial-body"> "{{testimonial.text}}" </p>
+            <p class="testimonial-signature" align="right"> {{testimonial.name}} </p>
+            {% endfor %}
+        </div>      
+        <div class="right-section">
+            <h3> The Places We Have Been </h3>
+            <div id="map"></div>
+        </div>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMNsc0urtj0giVwK280jdUWIOdabj0yCU&callback=initMap">
+    </script>
+</body>
+</html>

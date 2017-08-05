@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<html>
+<head>
+        <title> Bigyaan - About Us </title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+    </head>
+    <body>
+        <div class="toolbar">
+            <img id="logo" src="{% static 'images/logo.png' %}" align="left">
+            <div class="right-side">
+                <a href="{% url 'index' %}">HOME</a>
+                <a href="{% url 'aboutus' %}">ABOUT US</a>
+                <a href="{% url 'ourstory' %}">OUR STORY</a>
+                <a href="{% url 'studentsworkshops' %}"> STUDENTS WORKSHOPS</a>
+                <a href="#"> LINK</a>
+                <a href="#"> LINK</a>
+            </div>
+        </div>
+        <div class="main-section">
+            <h3> About Us </h3>
+            Bigyaan was started by Mr Jyoti Parruck to share good practice of hands-on, experimental teaching and learning. Everyday at Bigyaan our resource persons experiment, research, explore new ways of teaching and learning that they enjoy sharing with students and teachers across the country through teachers workshops, students workshops and <a href='#'>Community Clubs</a>. Bigyaan has no franchises and are run by the resource persons themselves.
+        </div>
+        <div class="main-section">
+        <h3 style="text-align: center;"> Resource Persons </h3>
+
+        <div class="left-section">
+            <h3 style="text-align:center;">Science</h3>
+            <img class="testimonial-images" style="height:225px;" src="{% static 'images/jyotiparruck.jpg'%}">
+            <br>
+            Mr Jyoti Parruck is an ardent nature lover and teaching both teachers and students is his first love. He has over 25 years of experience teaching students across primary and secondary age groups. For 6 long years he ran the Anveshna Science Exploration Club at Heritage School Gurgaon, and has a large fan following amongst his students. His first principle of teaching is that all students in the class must be engaged and take part in hands on exploration and creation. Tools and techniques curated by him typically use simple materials and can be accomplished easily in a large classroom. In 2014 he left The Heritage School (where he returns once in a while) to share the fun with a wider group of teachers and students. He now runs Science Clubs for Students on weekends at Bigyaan, Gurgaon, and travels round the country delivering workshops. <br>
+            <br>
+            To contact him, email <strong>jparruck@gmail.com</strong> or call <strong>+919312690129</strong>.
+        </div>
+        <div class="right-section">
+        <h3 style="text-align: center;">English</h3>
+        <img class="testimonial-images" src="{% static 'images/debalinamitra.jpg' %}">
+        <br>
+            Debalina Mitra Chanda is a resource person who draws upon her varied career experiences to deliver wonderfully interactive students and teachers workshops on using interactive and engaging pedagogy for teaching English. She began her career in the advertising sector and then moved to teaching. Her teaching experience not only includes school students but also adult pupils at InLingua, Delhi NCR. She is now a freelance trainer for the British Council and Bigyaan. Her latest venture is setting up and running the English Afterschool Club at 96, Ballygunge Place, Kolkata.<br><br> Contact her at <strong>debalina.mc@gmail.com</strong>, or call her at <strong>+919711332243</strong> to join her students club or to invite her to your school.
+            
+        </div>
+        </div>
+    </body>
+</html>

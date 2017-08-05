@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+<head>
+        <title> Bigyaan </title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+    </head>
+    <body>
+        <div class="toolbar">
+            <img id="logo" src="{% static 'images/logo.png' %}" align="left">
+            <div class="right-side">
+                <a href="{% url 'index' %}">HOME</a>
+                <a href="{% url 'aboutus' %}">ABOUT US</a>
+                <a href="{% url 'ourstory' %}">OUR STORY</a>
+                <a href="{% url 'studentsworkshops' %}"> STUDENTS WORKSHOPS</a>
+                <a href="#"> LINK</a>
+                <a href="#"> LINK</a>
+            </div>  
+        </div>
+        <img src="{% static 'images/studentsworkshops.jpg' %}" align="right" style="float:right;">
+        <div class="main-section" style="float:left;margin:auto;">
+        	<h3> Students Workshops </h3>
+        	<h4> Hand-on science activities that engage and inspire.</h4>
+        	<ul>
+        		<li> Easy to use materials </li>
+        		<li> Linked to Curriculum </li>
+        		<li> Customizable Content </li>
+        		<li> Flexible to fit timetable </li>
+        		<li> &#8377; </li>
+        	</ul>
+        </div>
+    </body>
+</html>
