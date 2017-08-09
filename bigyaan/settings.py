@@ -31,12 +31,15 @@ ALLOWED_HOSTS = ['192.168.1.6', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'photologue',
+    'sortedm2m',
     'website',
 ]
 
@@ -122,4 +125,4 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
+SITE_ID = 1

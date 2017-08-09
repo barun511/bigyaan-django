@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<html>
+<head>
+        <title> Bigyaan </title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+    </head>
+    <body>
+        <div class="toolbar">
+            <img id="logo" src="{% static 'images/logo.png' %}" align="left">
+            <div class="right-side">
+                <a href="{% url 'index' %}">HOME</a>
+                <a href="{% url 'aboutus' %}">ABOUT US</a>
+                <a href="{% url 'ourstory' %}">OUR STORY</a>
+                <a href="{% url 'studentsworkshops' %}"> STUDENTS WORKSHOPS</a>
+                <a href="#"> LINK</a>
+                <a href="#"> LINK</a>
+            </div>  
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>

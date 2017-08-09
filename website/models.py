@@ -2,10 +2,6 @@ from django.db import models
 from django.utils import timezone
 
     
-class Image(models.Model):
-    album = models.TextField()
-    image_name = models.TextField()
-    created_date = models.DateTimeField( default=timezone.now)
 
 class Marker(models.Model):
     def __str__(self):
