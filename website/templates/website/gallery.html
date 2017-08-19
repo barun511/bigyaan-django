@@ -13,14 +13,19 @@
                 <a href="{% url 'aboutus' %}">ABOUT US</a>
                 <a href="{% url 'ourstory' %}">OUR STORY</a>
                 <a href="{% url 'workshops' %}"> WORKSHOPS</a>
-                <a href="{% url 'gallery' %}"> GALLERY</a>
+                <a href="#"> GALLERY</a>
             </div>  
         </div>
-        <div class="main-image">
-        <img src="{% static 'images/galleryimage.jpg' %}" style="float: right;" align="right">
-        </div>
-        <div class="main-section" align="left">
-        {% block content %}{% endblock %}
-        </div>
     </body>
+    <div class="main-section" style="text-align: center;">
+        {% for gallery in galleries %}
+            <h3 style="padding-bottom: 15px;border-bottom: 1px solid #eebb00">{{ gallery.title }}</h3>
+            {% if gallery_description %}
+            {{ gallery.description|safe }}
+            {% endif %}
+            {% for photo in gallery.public %}
+            <a href="{{ photo.get_absolute_url }}"><img src="{{ photo.get_thumbnail_url }}" alt="{{ photo.title }}"></a>
+            {% endfor %}
+        {% endfor %}
+    </div>
 </html>
