@@ -8,7 +8,7 @@ urlpatterns = [
     url(r'^aboutus$', views.aboutus, name="aboutus"),
     url(r'^ourstory$', views.ourstory, name="ourstory"),
     url(r'^workshops$', views.workshops, name="workshops"),
-    url(r'^gallery/?$', views.gallery, name="gallery"),
+ #   url(r'^gallery/?$', views.gallery, name="gallery"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

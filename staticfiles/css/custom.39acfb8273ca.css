@@ -1,0 +1,168 @@
+.container
+{
+    position: relative;
+    width: 85%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 24px;
+}
+.action
+{
+    padding-top: 3%;
+    margin-left: -20px;
+}
+.action a
+{
+    text-decoration: none;
+    color: #050431;
+    background-color:#eebb00;
+    padding:20px;
+    margin: 2%;
+    font-weight: bold;
+    border: 1px solid #eebb00;
+    border-radius: 100px;
+}
+#statement
+{   
+    color:#eebb00;
+    left:3%;
+}
+.right-side
+{
+   margin-left:40%;   
+}
+.right-side a:hover
+{
+   color:#ffffff;
+}
+#logo
+{
+    position: relative;
+    bottom:23px;
+    width:192px;
+    height:79px;
+    vertical-align: middle;
+}
+.toolbar a
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    padding-left: 60px;
+}
+.toolbar
+{
+    border:0px;
+    position: relative;
+    padding-top: 38px;
+    padding-bottom: 41px;
+    padding-left: 5%;
+    align-items: left;
+    background-color: #eebb00;
+}
+
+
+.main-section
+{
+    text-align: justify;
+    padding-top:3%;
+    color: #eebb00;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-right:15%;
+}
+.main-section h3
+{
+    font-size:36px;
+    text-align: center;
+}
+.main-section a
+{
+    text-decoration: none;
+    color: #00eebb;
+}
+.main-section a:hover
+{
+    color:#bbee00;
+}
+
+h3
+{
+    text-align: center;
+}
+/* ABOUT US PAGE */
+.testimonials
+{
+    margin-left:15%;
+    margin-right:15%;
+    text-align: justify;
+    padding-top:2%;
+    font-size:24px;
+    color:#eebb00;
+}
+.right-section
+{
+    margin-top:2%;
+    float:right;
+    width:45%;
+}
+.left-section
+{
+    margin-top:2%;
+    float:left;
+    width:45%;
+}
+.testimonial-images
+{
+    border-radius: 10%;
+    background-color:white;
+    margin-bottom:5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial-signature
+{
+    padding-bottom: 25px;
+    border-bottom: 3px solid #eebb00;
+}
+#map
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height:700px;
+    width:700px;
+}
+html, body
+{
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+    padding:0;
+}
+.circle
+{
+    width:125px;
+    height:125px;
+    margin-right: 20px;
+    border-radius: 100px;
+    border: 8px solid #eebb00;
+}
+.main-image > img
+{
+    width:50%;
+    height:85%;
+    position: fixed;
+    right:20px;
+}
+.mission
+{
+    margin-left: 5%;
+    font-size: 40px;
+    margin-top:10%;
+}
+body
+{
+    background-color: #050431;
+    color: #ffffff;
+}
