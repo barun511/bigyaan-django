@@ -1,21 +1,10 @@
+{% extends 'base.html' %}
 {% load static %}
-<html>
-<head>
-        <title> Bigyaan - About Us </title>
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
-    </head>
-    <body>
-        <div class="toolbar">
-            <img id="logo" src="{% static 'images/logo.png' %}" align="left">
-            <div class="right-side">
-                <a href="{% url 'index' %}">HOME</a>
-                <a href="{% url 'aboutus' %}">ABOUT US</a>
-                <a href="{% url 'ourstory' %}">OUR STORY</a>
-                <a href="{% url 'workshops' %}"> WORKSHOPS</a>
-                <a href="/photologue/gallery"> GALLERY</a>
-            </div>
-        </div>
+{% block title %}
+About Us
+{% endblock %}
+{% block content %}
+<div class="container">
         <div class="main-section">
             <h3> About Us </h3>
             Bigyaan was started by Mr Jyoti Parruck to share good practice of hands-on, experimental teaching and learning. Everyday at Bigyaan our resource persons experiment, research, explore new ways of teaching and learning that they enjoy sharing with students and teachers across the country through teachers workshops, students workshops and <a href='#'>Community Clubs</a>. Bigyaan has no franchises and are run by the resource persons themselves.
@@ -36,8 +25,6 @@
         <img class="testimonial-images" src="{% static 'images/debalinamitra.jpg' %}">
         <br>
             Debalina Mitra Chanda is a resource person who draws upon her varied career experiences to deliver wonderfully interactive students and teachers workshops on using interactive and engaging pedagogy for teaching English. She began her career in the advertising sector and then moved to teaching. Her teaching experience not only includes school students but also adult pupils at InLingua, Delhi NCR. She is now a freelance trainer for the British Council and Bigyaan. Her latest venture is setting up and running the English Afterschool Club at 96, Ballygunge Place, Kolkata.<br><br> Contact her at <strong>debalina.mc@gmail.com</strong>, or call her at <strong>+919711332243</strong> to join her students club or to invite her to your school.
-            
-        </div>
-        </div>
-    </body>
-</html>
+</div>
+</div>
+{% endblock %}

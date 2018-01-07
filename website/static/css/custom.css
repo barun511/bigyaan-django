@@ -6,22 +6,7 @@
     padding-top: 5%;
     font-size: 24px;
 }
-.action
-{
-    padding-top: 3%;
-    margin-left: -20px;
-}
-.action a
-{
-    text-decoration: none;
-    color: #050431;
-    background-color:#eebb00;
-    padding:20px;
-    margin: 2%;
-    font-weight: bold;
-    border: 1px solid #eebb00;
-    border-radius: 100px;
-}
+
 #statement
 {   
     color:#eebb00;
@@ -29,7 +14,7 @@
 }
 .right-side
 {
-   margin-left:40%;   
+   margin-left:30%;   
 }
 .right-side a:hover
 {
@@ -58,18 +43,26 @@
     padding-bottom: 41px;
     padding-left: 5%;
     align-items: left;
-    background-color: #eebb00;
+    background-color:  #eebb00; 
 }
-
-
+.navbar-custom
+{
+    background-color:#eebb00;
+    padding:20px;
+    padding-bottom:30px;
+    border:0px;
+    margin:0px;
+    font-size:30;
+}
+.navbar-default .navbar-nav > li > a
+{
+    color:#000000;
+}
 .main-section
 {
     text-align: justify;
-    padding-top:3%;
     color: #eebb00;
     font-size: 24px;
-    margin-left: 15%;
-    margin-right:15%;
 }
 .main-section h3
 {
@@ -132,7 +125,8 @@ h3
     margin-left:auto;
     margin-right:auto;
     height:700px;
-    width:700px;
+    width:500px;
+
 }
 html, body
 {
@@ -148,21 +142,62 @@ html, body
     border-radius: 100px;
     border: 8px solid #eebb00;
 }
-.main-image > img
+#landing
 {
-    width:50%;
-    height:85%;
-    position: fixed;
-    right:20px;
+    width:70%%;
+    height:83%;
+    padding-top:0px;
+    margin-top:0px;
 }
 .mission
 {
-    margin-left: 5%;
+    position: relative;
     font-size: 40px;
-    margin-top:10%;
+}
+.image-text
+{
+    position: absolute;
+    margin-top:5%;
+    padding-top:5%;
+    width:60%;
+    margin-left:5%;
+}
+.image-text h2
+{
+    margin-left:10%;
 }
 body
 {
     background-color: #050431;
     color: #ffffff;
+    font-size:1vw;
+}
+
+.action
+{
+    padding-top: 3%;
+    margin-left: -20px;
+}
+.action a
+{
+    text-decoration: none;
+    color: #050431;
+    background-color:#eebb00;
+    padding:20px;
+    margin: 2%;
+    font-weight: bold;
+    border: 1px solid #eebb00;
+    border-radius: 100px;
+}
+.action a:hover
+{
+    color:#bb0e0b;
+}
+.container-fluid
+{
+    padding: 0px;
+}
+.container
+{
+    margin-top:5%;
 }

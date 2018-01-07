@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head>
+        <title> Bigyaan </title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+    </head>
+    <body>
+        <div class="toolbar">
+            <img id="logo" src="{% static 'images/logo.png' %}" align="left">
+            <div class="right-side">
+                <a href="{% url 'index' %}">HOME</a>
+                <a href="{% url 'aboutus' %}">ABOUT US</a>
+                <a href="{% url 'ourstory' %}">OUR STORY</a>
+                <a href="{% url 'workshops' %}"> WORKSHOPS</a>
+                <a href="/photologue/gallery"> GALLERY</a>
+            </div>  
+        </div>
+        <div id="test">
+        <img id="landing" src="{% static 'images/landingedited.png' %}" align="right">
+        </div>
+        <div class="mission">
+        <h2 id="statement"> Mission Statement</h2>
+            <ul>
+                    <li> Hands on active learning that engages and inspires.</li>
+                    <li> Stimulates creativity. </li>
+                    <li> Beyond textbooks and classrooms.</li>
+            </ul>
+            <div class="action">
+            <a href="{% url 'workshops' %}">Workshops</a>
+            <a href="http://workshopsww.bigyaan.myshopify.com">Resource Shop</a>
+            </div>
+        </div>
+    </body>
+</html>

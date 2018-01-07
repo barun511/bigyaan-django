@@ -1,11 +1,14 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block title %} Our Story {% endblock %}
 <html>
 <head>
     <title> Bigyaan - Our Story </title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
 </head>
-<body>
+{% block content %}
+<div class="container">
     <script>
         function initMap() {
             var bounds = new google.maps.LatLngBounds();
@@ -37,16 +40,6 @@
             });*/
         }
     </script>
-    <div class="toolbar">
-        <img id="logo" src="{% static 'images/logo.png' %}" align="left">
-        <div class="right-side">
-            <a href="{% url 'index' %}">HOME</a>
-            <a href="{% url 'aboutus' %}">ABOUT US</a>
-            <a href="{% url 'ourstory' %}">OUR STORY</a>
-            <a href="{% url 'workshops' %}"> WORKSHOPS</a>
-            <a href="/photologue/gallery"> GALLERY</a>
-        </div>
-    </div>
     <div class="main-section">
         <h3> Our Story </h3>
         Bigyaan began in 2014 and has since come a long, long way. We now offer workshops for students and teachers in English, Activity Enriched Pedagogy, and Science - these workshops are directly conducted by our <a href="{% url 'aboutus' %}">resource persons</a>.
@@ -67,5 +60,7 @@
     </div>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMNsc0urtj0giVwK280jdUWIOdabj0yCU&callback=initMap">
     </script>
+</div>
+{% endblock %}
 </body>
 </html>
