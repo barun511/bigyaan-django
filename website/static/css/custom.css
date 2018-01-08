@@ -58,6 +58,10 @@
 {
     color:#000000;
 }
+.navbar-default .navbar-nav > li > a:hover
+{
+    color:#bb0e0b;
+}
 .main-section
 {
     text-align: justify;
@@ -67,6 +71,7 @@
 .main-section h3
 {
     font-size:36px;
+    margin-bottom:30px;
     text-align: center;
 }
 .main-section a
@@ -107,6 +112,7 @@ h3
 }
 .testimonial-images
 {
+    height:225px;
     border-radius: 10%;
     background-color:white;
     margin-bottom:5%;

@@ -1,4 +1,30 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block title %} Workshops {% endblock %}
+{% block content %}
+<div class="container">
+<div class="main-section">
+            <h3> General Workshop Text </h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div class="main-section">
+        <h3 style="text-align: center;"> Details </h3>
+
+        <div class="left-section">
+            <h3 style="text-align:center;">Students Workshops</h3>
+            <img class="testimonial-images" style="height:225px;" src="{% static 'images/studentsworkshops.jpg'%}">
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." <br>
+        </div>
+        <div class="right-section">
+        <h3 style="text-align: center;">Teachers Workshops</h3>
+        <img class="testimonial-images" src="{% static 'images/teachersworkshops.jpg' %}">
+        <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+</div>
+</div>
+    {% endblock %}
 <html>
 <head>
         <title> Bigyaan </title>
