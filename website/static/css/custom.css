@@ -179,7 +179,10 @@ body
     color: #ffffff;
     font-size:1vw;
 }
-
+iframe
+{
+    align:middle;
+}
 .action
 {
     padding-top: 3%;
@@ -208,7 +211,7 @@ body
 {
     margin-top:5%;
 }
-    nav.navbar { 
-        max-height: 120px;
-        overflow: hidden;
-    }
+nav.navbar { 
+    max-height: 120px;
+    overflow: hidden;
+}
