@@ -178,6 +178,7 @@ body
     background-color: #050431;
     color: #ffffff;
     font-size:1vw;
+    padding-bottom:100px;
 }
 iframe
 {
@@ -214,4 +215,24 @@ iframe
 nav.navbar { 
     max-height: 120px;
     overflow: hidden;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background-color: #eebb00;
+    border: 1px solid black;
+    color:black;
+    text-align:center;
+    height:100px;
+}
+.footer .footer-content
+{
+    margin-top: 15px;
+}
+.footer .footer-content a
+{
+    padding-left: 5%;
+    padding-right:5%;
 }
